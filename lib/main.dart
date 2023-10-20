@@ -6,6 +6,7 @@ import 'package:getx/ExampleThree.dart';
 import 'package:getx/FutureBuilder.dart';
 import 'package:getx/HomeScreen.dart';
 import 'package:getx/ImagepickerExample.dart';
+import 'package:getx/LoginExample.dart';
 import 'package:getx/Screentwo.dart';
 import 'package:getx/res/theme/darkTheme.dart';
 import 'package:getx/res/theme/lightTheme.dart';
@@ -37,9 +38,9 @@ class MyApp extends StatelessWidget {
       darkTheme: darkTheme,
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: const FutureBuilderExample(),
+      home: const LoginScreen(),
       getPages: [
-        GetPage(name: '/', page: () => const FutureBuilderExample()),
+        GetPage(name: '/', page: () => const LoginScreen()),
         GetPage(name: '/screenOne', page: () =>  ScreenOne(name: 'Umer',)),
         GetPage(name: '/screentwo', page: () =>  ScreenTwo(name: 'Umer',)),
       ],
